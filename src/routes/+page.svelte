@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import '../style.css';
 
   const sleep = (ms: number) =>
@@ -45,6 +46,10 @@
 
     state = 'done';
   }
+
+  onMount(() => {
+    startStreaming();
+  });
 </script>
 
 <main>
@@ -57,10 +62,4 @@
       {/if}
     {/each}
   </p>
-  <ul>
-    <li>{state}</li>
-  </ul>
-  <button on:click={startStreaming} disabled={state === 'streaming'}
-    >Start</button
-  >
 </main>

@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Argon';
+  src: url('/src/fonts/MonaspaceArgon.ttf');
+}
+
+@font-face {
+  font-family: 'Krypton';
+  src: url('/src/fonts/MonaspaceKrypton.ttf');
+}
+
+@font-face {
+  font-family: 'Neon';
+  src: url('/src/fonts/MonaspaceNeon.ttf');
+}
+
+@font-face {
+  font-family: 'Radon';
+  src: url('/src/fonts/MonaspaceRadon.ttf');
+}
+
+@font-face {
+  font-family: 'Xenon';
+  src: url('/src/fonts/MonaspaceXenon.ttf');
+}
+
 html,
 body,
 div,
@@ -14,7 +39,7 @@ label {
 }
 
 body {
-  background-color: #272727;
+  background-color: #0c0c0c;
   color: #ffffff;
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -30,4 +55,29 @@ body {
   h3 {
     @apply text-lg;
   }
+}
+
+.argon {
+  font-family: 'Argon';
+  color: orange;
+}
+
+.krypton {
+  font-family: 'Krypton';
+  color: rgb(212, 138, 0);
+}
+
+.neon {
+  font-family: 'Neon';
+  color: rgb(167, 113, 15);
+}
+
+.radon {
+  font-family: 'Radon';
+  color: rgb(219, 150, 20);
+}
+
+.xenon {
+  font-family: 'Xenon';
+  color: rgb(255, 177, 31);
 }

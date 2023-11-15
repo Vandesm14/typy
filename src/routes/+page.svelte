@@ -5,7 +5,7 @@
   const sleep = (ms: number) =>
     new Promise((resolve) => setTimeout(resolve, ms));
 
-  let text = 'Greetings, Traveler. Your mission is to decrypt this message.';
+  let text = 'Greetings, Traveler.';
   let state: 'streaming' | 'decrypting' | 'done' = 'done';
   let liveText: { char: string; font: string }[] = [];
   let fonts = ['argon', 'krypton', 'neon', 'radon', 'xenon'];
@@ -52,7 +52,7 @@
   });
 </script>
 
-<main>
+<main class="p-6 text-2xl">
   <p>
     {#each liveText as { char, font }, i (i)}
       {#if char === ' '}
